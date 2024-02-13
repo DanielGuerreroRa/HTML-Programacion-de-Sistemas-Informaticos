@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario 1</title>
+  </head>
+  <body>
+    <h1>Ejercicio del 14 noviembre</h1>
+   
+    <br />
+    <form action="recibido.html" method="post">
+      <table>
+        <tr>
+          <td>
+            <label for="nombre">Escribe tu nombre:</label>
+          </td>
+          <td>
+            <input type="text" name="nombre" id="nombre" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="apellido">Escribe tu apellido:</label>
+          </td>
+          <td>
+            <input type="text" name="apellido" id="apellido" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="email">Escribe tu email :</label>
+          </td>
+          <td>
+            <input type="email" name="email" id="email" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="valoracion"
+              >¿Qué valoración le das a la publicación?</label
+            >
+          </td>
+          <td><label></label>
+            <input type="radio" name="valoracion" id="valoracion" value="0" />0
+            <input type="radio" name="valoracion" id="valoracion" value="1" />1
+            <input type="radio" name="valoracion" id="valoracion" value="2" />2
+            <input type="radio" name="valoracion" id="valoracion" value="3" />3
+            <input type="radio" name="valoracion" id="valoracion" value="4" />4
+            <input type="radio" name="valoracion" id="valoracion" value="5" />5
+          </label></td>
+        </tr>
+        <tr>
+          <td>¿Qué asignaturas has estudiado?</td>
+          <td>
+            <input type="checkbox" name="html" id="html" />html
+            <input type="checkbox" name="css" id="css" />css
+            <input type="checkbox" name="js" id="js" />javascript
+          </td>
+        </tr>
+        <tr>
+          <td>Selecciona tu alineacion ideal</td>
+          <td>
+            <select name="alineacion" id="alineacion" size="5" multiple>
+          <option value="Cristiano">Cristiano</option>
+          <option value="Messi">Messi</option>
+          <option value="Ronaldo">Ronaldo</option>
+          <option value="Sergio Ramos">Sergio Ramos</option>
+          <option value="Raul">Raul</option>
+        </select>
+      </td>
+        </tr>
+        <tr>
+          <td><label for="cometarios">¿Qué mejoraría de este curso?</label></td>
+          <td><textarea name="cometarios" id="cometarios" cols="35" rows="10"></textarea></td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <input type="submit" value="Enviar">
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

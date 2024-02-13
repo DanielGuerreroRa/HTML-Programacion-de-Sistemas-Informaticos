@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 15</title>
+</head>
+<body>
+    <h1>Formulario Cliente</h1>
+    <form action="recibido.html" method="post">
+    <tr>
+    <label><th>Nombre*</th></label>
+    <br>
+    <td><input type="text"  required="*" id="nombre" placeholder="Escribe el nombre"></td>
+<br>
+    </tr><label>
+        <th>Email</th>
+        <br>
+    </label></tr>
+    <td>
+        <input type="email" name="email" id="email" placeholder="correo@empresa.com">
+    </td>
+    <br>
+    <td>
+        <label>
+            <tr>
+                Asunto
+            </tr>
+        </label>
+        <br>
+        <select name="asunto" id="asunto" size="3" multiple>
+            <option value="presupuesto">Pedir presupuesto web
+            <option value="cita">Solicitar cita previa
+            <option value="otros">Otros
+            </option>
+        </select>
+    </td>
+    <br>
+    <label>
+        <tr>
+            <td>
+                ¿Cómo nos ha conocido?
+            </td>
+        </tr>
+    </label>
+    <br>
+    <tr>
+        <label>
+            <input type="radio" name="valoracion" id="valoracion" value="Un amigo"/>Un amigo
+            <input type="radio" name="valoracion" id="valoracion" value="valoracion"/>Googleando
+            <input type="radio" name="valoracion" id="valoracion" value="Buzoneo"/>Buzoneo
+            <input type="radio" name="valoracion" id="valoracion" value="Otros"/>Otros
+        </label>
+    </tr>
+    <br>
+    <tr>
+        <label>
+            <td>
+                Escribe tu comentario
+            </td>
+        </label>
+    </tr>
+    <br>
+    <tr>
+        <label>
+            <textarea name="comentarios" id="comentarios" cols="35" rows="7">Escriba un mensaje</textarea>
+        </label>
+    </tr>
+    <br>
+    <tr>
+        <td>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpiar datos">
+
+        </td>
+    </tr>
+</form>
+</body>
+</html>

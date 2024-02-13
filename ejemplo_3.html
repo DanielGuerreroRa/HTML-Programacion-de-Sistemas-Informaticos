@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio preguntas</title>
+</head>
+<body>
+    <h2 class="preguntas">¿Qué es Lorem Ipsum?</h2>
+    <h4 class="negrita">Pregunta:</h4>
+    <p class="parrafo">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.</p>
+
+    <h2 class="preguntas">¿Por qué lo usamos?</h2>
+    <h4 class="negrita">Pregunta:</h4>
+    <p class="parrafo">Se utiliza desde el siglo XVI como un texto de relleno para las imprentas.</p>
+
+    <h2 class="preguntas">¿De dónde viene?</h2>
+    <h4 class="negrita">Pregunta:</h4>
+    <p class="parrafo">Contrariamente a la creencia popular, Lorem Ipsum no es simplemente un texto aleatorio.</p>
+</body>
+</html>
+
+
+*************************************************************************************************
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores avanzados</title>
+    <style>
+        .hijos-directos>li{
+            color: blue;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: bolder;
+        }
+        .hijos-descendientes span{
+            color: red;
+        }
+        .hermanos ~li{
+            color: greenyellow;
+            font-family: italic;
+        }
+        .hermanos-adyacentes+li {
+            background-color: lightgreen;
+            color:blue;
+        }
+        .ejemplo1 a[href]{
+            background-color: black;
+        }
+        .ejemplo2 a[href^="https://for"]{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>Selectores avanzados</h1>
+    <h2>Hijos directos</h2>
+    <ul class="hijos-directos">
+        <li>Primavera</li>
+        <li>Verano</li>
+        <li>Otoño</li>
+        <li>Invierno</li>
+    </ul>
+    <h2>Hijos descendientes</h2>
+    <ul class="hijos-descendientes">
+        <li><span>Primavera</span></li>
+        <li>Verano</li>
+        <li>Otoño</li>
+        <li>Invierno</li>
+    </ul>
+    <h2>Hermanos</h2>
+    <ul>
+        <li><span>Primavera</span></li>
+        <li class="hermanos">Verano</li>
+        <li>Otoño</li>
+        <li>Invierno</li>
+    </ul>
+    <h2>Hermanos adyacentes</h2>
+    <ul>
+        <li>Primavera</li>
+        <li class="hermanos-adyacentes">Verano</li>
+        <li>Otoño</li>
+        <li>Invierno</li>
+    </ul>
+    <h2>Valor de atributos</h2>
+    <ol class="ejemplo1">
+    <li><a>Elemento 1</a></li>
+    <li><a href="https://github.com/cohet3">Elemento 2</a></li>
+    <li><a>Elemento 3</a></li>
+    <li><a href="https://github.com/cohet3">Elemento 4</a></li>
+    <li><a href="https://github.com/cohet3">Elemento 5</a></li>
+</ol>
+<h2>Valor de atributo con texto</h2>
+<ol class="ejemplo2">
+<li><a>Elemento 1</a></li>
+<li><a href="https://github.com/cohet3">Elemento 2</a></li>
+<li><a href="https://formaciononline.corenetworks.es/general/prt/prg/recursos.php?codcurso=C25492&btn=1">Elemento 3</a></li>
+<li><a href="https://github.com/cohet3">Elemento 4</a></li>
+<li><a href="https://github.com/cohet3">Elemento 5</a></li>
+</ol>
+</body>
+</html>

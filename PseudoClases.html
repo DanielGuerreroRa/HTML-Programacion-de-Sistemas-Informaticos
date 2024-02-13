@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Clases</title>
+    <style type="text/css">
+        h1:hover{
+            font-size: 36px;
+            color: blueviolet;
+        }
+        a:hover{
+            color: orange;
+        }
+        p:hover{
+            color: hotpink;
+        }
+        a:visited{
+            color: aqua;
+        }
+        a:active{
+            color: blue;
+        }
+        input:focus{
+            color: green;
+        }
+        input:empty{
+            border-color: blueviolet;
+        }
+        input:disabled{
+            border-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudo Clases</h1>
+    <a class="sobre-enlace" href="https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-classes">Pinche aqui</a>
+    <a class="sobre-enlace" href="hhtps://wikipedia.org">Pinche aqui</a>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta rem nulla quidem non quod quae eius odio eligendi assumenda illum ipsa ut nemo reiciendis tempora, facere nam sunt excepturi et.</p>
+    <form method="post" action="https://wikipedia.org"></form>
+    <label for="ombrespar">Nombre:</label>
+    <input type="text" name="Nombre"> 
+    <br/>
+    <label for="telefono" >Telefono:</label>
+    <input type="text" name="Nombre" disabled>
+    <br>
+    <label for="email">Email:</label>
+    <input type="text" name="Nombre"> 
+    <br/>
+    <input type="submit" name="Enviar">
+</body>
+</html>

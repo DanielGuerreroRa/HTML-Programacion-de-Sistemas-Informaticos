@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>>, initial-scale=1.0">
+    <title>Selectores Avanzados</title>
+    <style>
+        .hijos-directos>li{
+            color: aqua;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bolder;
+        }
+        .hijos-descedientes span{
+            color: red;
+            font-size: larger
+            ;
+        }
+        .hermanos ~li{
+            color: blueviolet;
+            font-style: italic;
+        }
+        .hermanos-adyacentes{
+            color: greenyellow;
+            background-color: black;
+        }
+        .ejemplo1 a[href]{
+            background-color: violet;
+        }
+        .ejemplo2 a[href^="https://formaciononline.corenetworks.es/"]{
+            background-color: gray;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Selectores Avanzados</h1>
+    <h2>Descendientes directos</h2>
+    <ul class="hijos-directos">
+        <li>Primavera</li>
+        <li>Verano</li>
+        <li>Otoño</li>
+        <li>Invierno</li>
+    </ul>
+
+    <h2>Hijos descendientes</h2>
+    <ul class="hijos-descedientes">
+        <li><span>Primavera</span></li>
+        <li>Verano</li>
+        <li>Otoño</li>
+        <li>Invierno</li>
+    </ul>
+ 
+    <h2>Hermanos</h2>
+    <ul>
+        <li>Primavera</li>
+        <li class="hermanos">Verano</li>
+        <li>Otoño</li>
+        <li>Invierno</li>
+    </ul>
+    <h2>Hermanos adyacentes</h2>
+    <ul>
+        <li>Primavera</li>
+        <li class="hermanos-adyacentes">Verano</li>
+        <li>Otoño</li>
+        <li>Invierno</li>
+    </ul>
+    <h2>Valor de atributos</h2>
+    <ol class="ejemplo1">
+        <li><a href="https://formaciononline.corenetworks.es/">Elemento 1</a></li>
+        <li><a href="https://formaciononline.corenetworks.es/">Elemento 2</a></li>
+        <li><a href="https://formaciononline.corenetworks.es/">Elemento 3</a></li>
+        <li><a href="https://formaciononline.corenetworks.es/">Elemento 4</a></li>
+        <li><a>Elemento 5</a></li>
+    </ol>
+    <h2>Valor de atributos con texto</h2>
+    <ol class="ejemplo2">
+        <li><a href="https://formaciononline.corenetworks.es/">Elemento 1</a></li>
+        <li><a href="https://formaciononline.corenetworks.es/">Elemento 2</a></li>
+        <li><a href="https://formaciononline.corenetworks.es/">Elemento 3</a></li>
+        <li><a href="https://formaciononline.corenetworks.es/">Elemento 4</a></li>
+        <li><a href="https://es.wikipedia.org/wiki/Wikipedia:Portada">Elemento 5</a></li>
+    </ol>
+
+
+ 
+
+</body>
+</html>
